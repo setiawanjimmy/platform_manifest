@@ -1,3 +1,5 @@
-Androidx Manifest
+Beltz Manifest
 
-repo init -u git://github.com/camcory/platform_manifest.git -b n
+Special thanks to camcory for the base
+
+repo init -u git://github.com/setiawanjimmy/platform_manifest.git -b beltz
