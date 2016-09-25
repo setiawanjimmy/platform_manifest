@@ -1,4 +1,4 @@
-Beltz Manifest
+Beltz-OMS Manifest
 
 Special thanks to camcory for the base
 
