@@ -46,7 +46,6 @@
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu,broadcom_pdk,generic_fs" />
   <project path="device/google/contexthub" name="device/google/contexthub" groups="device" />
-  <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -502,10 +501,15 @@
   <project path="packages/apps/PackageInstaller" name="setiawanjimmy/packages_apps_PackageInstaller" remote="github" revision="beltz" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="setiawanjimmy/android-prebuilts-gcc-linux-x86-arm-arm-eabi-4.9" remote="github" revision="m" />
 
+  <!-- Angler -->
+  <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" clone-depth="1" />
+  <project path="device/huawei/angler" name="setiawanjimmy/device_huawei_angler" remote="github" revision="beltz" />
+  <project path="vendor/huawei" name="setiawanjimmy/proprietary_vendor_huawei" remote="github" revision="beltz" />
 
   <!-- Shamu -->
+  <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
   <project path="device/moto/shamu" name="setiawanjimmy/device_moto_shamu" remote="github" revision="beltz" />
-  <project path="vendor/moto" name="camcory/proprietary_vendor_motorola" remote="github" revision="m" />
+  <project path="vendor/moto" name="setiawanjimmy/proprietary_vendor_motorola" remote="github" revision="beltz" />
 
   <!-- Hammerhead -->
   <project path="kernel/lge/hammerhead" name="setiawanjimmy/android_kernel_lge_hammerhead" remote="github" revision="n" />
