@@ -6,13 +6,12 @@
           review="android-review.googlesource.com" />
   <remote name="github"
           fetch="http://github.com/" />
-  <default revision="refs/tags/android-7.0.0_r6"
+  <default revision="refs/tags/android-7.0.0_r14"
            remote="aosp"
            sync-c="true"
            sync-j="16" />
 
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
-  <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" />
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
@@ -433,7 +432,6 @@
   <project path="system/connectivity/apmanager" name="platform/system/connectivity/apmanager" />
   <project path="system/connectivity/dhcp_client" name="platform/system/connectivity/dhcp_client" />
   <project path="system/connectivity/shill" name="platform/system/connectivity/shill" />
-  <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/firewalld" name="platform/system/firewalld" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
@@ -445,7 +443,6 @@
   <project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/tpm" name="platform/system/tpm" />
   <project path="system/update_engine" name="platform/system/update_engine" />
-  <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="system/weaved" name="platform/system/weaved" />
   <project path="system/webservd" name="platform/system/webservd" />
   <project path="toolchain/binutils" name="toolchain/binutils" />
@@ -469,9 +466,10 @@
   <project path="packages/apps/ContactsCommon" name="camcory/platform_packages_apps_contacts_common" remote="github" revision="n" />
   <project path="packages/apps/PhoneCommon" name="camcory/platform_packages_apps_PhoneCommon" remote="github" revision="n" />
   <project path="packages/inputmethods/LatinIME" name="camcory/android_packages_inputmethods_LatinIME" remote="github" revision="n" />
-  <project path="system/core" name="camcory/platform_system_core" remote="github" revision="n" />
+
 
   <!-- Beltz -->
+  <project path="build/kati" name="setiawanjimmy/build_kati" remote="github" revision="n" />
   <project path="frameworks/av" name="setiawanjimmy/platform_frameworks_av" remote="github" revision="beltz" />
   <project path="packages/apps/Camera2" name="setiawanjimmy/packages_apps_Camera2" remote="github" revision="beltz" />
   <project path="packages/apps/Dialer" name="setiawanjimmy/platform_packages_apps_dialer" remote="github" revision="beltz" />
@@ -479,6 +477,9 @@
   <project path="packages/apps/Gallery2" name="setiawanjimmy/packages_apps_Gallery2" remote="github" revision="beltz" />
   <project path="packages/apps/PackageInstaller" name="setiawanjimmy/packages_apps_PackageInstaller" remote="github" revision="beltz" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="setiawanjimmy/android-prebuilts-gcc-linux-x86-arm-arm-eabi-4.9" remote="github" revision="m" />
+  <project path="system/core" name="setiawanjimmy/platform_system_core" remote="github" revision="beltz" />
+  <project path="system/extras" name="setiawanjimmy/android_system_extras" remote="github" revision="beltz" />
+  <project path="system/vold" name="setiawanjimmy/platform_system_vold" remote="github" revision="beltz" />
 
   <!-- Angler -->
   <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" clone-depth="1" />
@@ -493,7 +494,7 @@
   <!-- Hammerhead -->
   <project path="kernel/lge/hammerhead" name="setiawanjimmy/android_kernel_lge_hammerhead" remote="github" revision="n" />
   <project path="device/lge/hammerhead" name="setiawanjimmy/android_device_lge_hammerhead" remote="github" revision="beltz" />
-  <project path="vendor/lge" name="beltz/proprietary_vendor_lge" remote="github" revision="beltz" />
+  <project path="vendor/lge" name="setiawanjimmy/android_vendor_lge" remote="github" revision="n" />
   <project path="hardware/qcom/audio" name="setiawanjimmy/hardware_qcom_audio" remote="github" revision="beltz" />
   <project path="hardware/qcom/bt" name="setiawanjimmy/hardware_qcom_bt" remote="github" revision="beltz" />
   <project path="hardware/qcom/display" name="setiawanjimmy/hardware_qcom_display" remote="github" revision="beltz" />
@@ -514,5 +515,9 @@
   <project path="vendor/androidx" name="setiawanjimmy/vendor_androidx" remote="github" revision="beltz-oms" />
   <project path="system/sepolicy" name="setiawanjimmy/platform_system_sepolicy" remote="github" revision="beltz-oms" />
   <project path="frameworks/native" name="setiawanjimmy/platform_frameworks_native" remote="github" revision="beltz-oms" />
+
+  <!-- DUI -->
+  <project path="external/DUtils" name="setiawanjimmy/android_external_DUtils" remote="github" revision="n" />
+  <project path="packages/apps/DUI" name="setiawanjimmy/android_packages_apps_DUI" remote="github" revision="n" />
 
 </manifest>
