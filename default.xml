@@ -486,6 +486,10 @@
   <project path="device/huawei/angler" name="setiawanjimmy/device_huawei_angler" remote="github" revision="beltz" />
   <project path="vendor/huawei" name="setiawanjimmy/proprietary_vendor_huawei" remote="github" revision="beltz" />
 
+  <!-- Bullhead -->
+  <project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="device,bullhead" clone-depth="1" />
+  <project path="device/lge/bullhead" name="setiawanjimmy/device_lge_bullhead" remote="github" revision="beltz" />
+
   <!-- Shamu -->
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
   <project path="device/moto/shamu" name="setiawanjimmy/device_moto_shamu" remote="github" revision="beltz" />
