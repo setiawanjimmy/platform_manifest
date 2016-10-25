@@ -17,7 +17,6 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="platform/art" groups="pdk" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
@@ -237,7 +236,6 @@
   <project path="external/selinux" name="platform/external/selinux" groups="pdk" />
   <project path="external/shflags" name="platform/external/shflags" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
-  <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
   <project path="external/sl4a" name="platform/external/sl4a" />
   <project path="external/slf4j" name="platform/external/slf4j" groups="pdk-fs" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs,pdk-fs" />
@@ -469,7 +467,9 @@
 
 
   <!-- Beltz -->
+  <project path="art" name="setiawanjimmy/android_art" remote="github" revision="beltz" />
   <project path="build/kati" name="setiawanjimmy/build_kati" remote="github" revision="n" />
+  <project path="external/skia" name="setiawanjimmy/platform_external_skia" remote="github" revision="beltz" />
   <project path="frameworks/av" name="setiawanjimmy/platform_frameworks_av" remote="github" revision="beltz" />
   <project path="packages/apps/Camera2" name="setiawanjimmy/packages_apps_Camera2" remote="github" revision="beltz" />
   <project path="packages/apps/Dialer" name="setiawanjimmy/platform_packages_apps_dialer" remote="github" revision="beltz" />
