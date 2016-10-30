@@ -511,14 +511,14 @@
 
   <!-- OMS -->
   <project path="packages/apps/masquerade" name="nicholaschum/masquerade" remote="github" revision="master" />
-  <project path="build" name="setiawanjimmy/platform_build" remote="github" revision="beltz-oms" >
+  <project path="build" name="setiawanjimmy/platform_build" remote="github" revision="oms7" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="frameworks/base" name="setiawanjimmy/platform_frameworks_base" remote="github" revision="beltz-oms" />
-  <project path="packages/apps/Settings" name="setiawanjimmy/platform_packages_apps_settings" remote="github" revision="beltz-oms" />
+  <project path="frameworks/base" name="setiawanjimmy/platform_frameworks_base" remote="github" revision="oms7" />
+  <project path="packages/apps/Settings" name="setiawanjimmy/platform_packages_apps_settings" remote="github" revision="oms7" />
   <project path="vendor/androidx" name="setiawanjimmy/vendor_androidx" remote="github" revision="beltz-oms" />
-  <project path="system/sepolicy" name="setiawanjimmy/platform_system_sepolicy" remote="github" revision="beltz-oms" />
-  <project path="frameworks/native" name="setiawanjimmy/platform_frameworks_native" remote="github" revision="beltz-oms" />
+  <project path="system/sepolicy" name="setiawanjimmy/platform_system_sepolicy" remote="github" revision="oms7" />
+  <project path="frameworks/native" name="setiawanjimmy/platform_frameworks_native" remote="github" revision="oms7" />
 
   <!-- DUI -->
   <project path="external/DUtils" name="setiawanjimmy/android_external_DUtils" remote="github" revision="n" />
