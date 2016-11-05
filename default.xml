@@ -17,7 +17,6 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="developers/build" name="platform/developers/build" />
@@ -394,8 +393,6 @@
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" groups="pdk-fs" />
   <project path="packages/services/Car" name="platform/packages/services/Car" groups="adp8064,pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Mms" name="platform/packages/services/Mms" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/services/Telecomm" name="platform/packages/services/Telecomm" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/services/Telephony" name="platform/packages/services/Telephony" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs" />
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="platform_testing" name="platform/platform_testing" />
@@ -465,6 +462,7 @@
 
   <!-- Beltz -->
   <project path="art" name="setiawanjimmy/android_art" remote="github" revision="beltz" />
+  <project path="bootable/recovery" name="setiawanjimmy/bootable_recovery" remote="github" revision="beltz" />
   <project path="build/kati" name="setiawanjimmy/build_kati" remote="github" revision="n" />
   <project path="external/busybox" name="setiawanjimmy/android_external_busybox" remote="github" revision="beltz" />
   <project path="external/skia" name="setiawanjimmy/platform_external_skia" remote="github" revision="beltz" />
@@ -476,6 +474,8 @@
   <project path="packages/providers/DownloadProvider" name="setiawanjimmy/packages_providers_DownloadProvider" remote="github" revision="beltz" />
   <project path="packages/apps/Gallery2" name="setiawanjimmy/packages_apps_Gallery2" remote="github" revision="beltz" />
   <project path="packages/apps/PackageInstaller" name="setiawanjimmy/packages_apps_PackageInstaller" remote="github" revision="beltz" />
+  <project path="packages/services/Telecomm" name="setiawanjimmy/packages_services_Telecomm" remote="github" revision="oms7" />
+  <project path="packages/services/Telephony" name="setiawanjimmy/packages_services_Telephony" remote="github" revision="oms7" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="setiawanjimmy/android-prebuilts-gcc-linux-x86-arm-arm-eabi-4.9" remote="github" revision="m" />
   <project path="system/core" name="setiawanjimmy/platform_system_core" remote="github" revision="beltz" />
   <project path="system/extras" name="setiawanjimmy/android_system_extras" remote="github" revision="beltz" />
